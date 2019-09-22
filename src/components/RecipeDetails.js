@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import {recipe} from '../tempDetails.js'
 
 class RecipeDetails extends Component {
     
        state = {
             recipe:{},
-            url:`https://www.food2fork.com/api/get?key=42247b813686ec11f4b05eed7d0f1729&rId=${this.props.details_id}`   
+            url:`https://www.food2fork.com/api/get?key=db458674b83e9806a64cf6ca9f19c8b8&rId=${this.props.details_id}`   
         }
         
          
