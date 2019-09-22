@@ -2,7 +2,6 @@ import React from 'react';
 import RecipeDetails from './components/RecipeDetails'
 import './App.css';
 import RecipesList from './components/RecipesList';
-import {recipes} from './tempList';
 
 class App extends React.Component {
   state = {
