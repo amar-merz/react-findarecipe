@@ -4,18 +4,16 @@ import RecipeSearch from './RecipeSearch';
 
 class RecipesList extends Component {
     render() {
-        const {recipes} = this.props;
-        const {handleDetails,
+            const {handleDetails,
             handleChange,
             handleSubmit,
             value,
-            error  }=this.props;
+            recipes,
+            error}=this.props;
           
         
         return (
-            
-               
-                
+                      
             <div className="container">
             <RecipeSearch handleSubmit={handleSubmit} handleChange={handleChange} value={value}/>
               <div className="row">
