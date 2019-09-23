@@ -8,11 +8,11 @@ class RecipeDetails extends Component {
         }
         
          
- 
-      async getRecipes(){
+       //get the clikced recipe details
+      async getRecipe(){
         try{
         const data = await fetch(this.state.url);
-       const datajs = await data.json();
+        const datajs = await data.json();
         
         this.setState({
           recipe:datajs.recipe
@@ -25,7 +25,7 @@ class RecipeDetails extends Component {
         }
       }
       componentDidMount(){
-       this.getRecipes();
+       this.getRecipe();
       }
     render() {
       const {handleIndex}=this.props;
